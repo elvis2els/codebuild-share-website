@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clode Code</title>
+
+<!--[支持ie9以下]>-->
+<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/getName.js"></script>
+<link rel='stylesheet' id='bootstrap-css-css'  href='css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css-css'  href='css/responsive.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css'  href='css/main.css?ver=1.0' type='text/css' media='all' />
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" href="css/login.css">
+<style type="text/css" adt="123">
+body, td, th {
+	font-family: "Lucida Sans Unicode", "Trebuchet MS", Arial, Helvetica;
+}
+body {
+	background-image: url(images/main-bg.jpg);
+}
+</style>
+</head>
+
+<body>
+<!-- Start of Header -->
+<div class="header-wrapper">
+  <header>
+    <div class="container">
+      <div class="logo-container"> 
+        <!-- Website Logo --> 
+        <a href="index.php"  title="Knowledge Base Theme"> <img src="images/logo.png" alt="Knowledge Base Theme"> </a> <span class="tag-line">Premium WordPress Theme</span> </div>
+    </div>
+  </header>
+</div>
+<!-- End of Header -->
+
+<form id="register" name="form1" method="POST" action="<?php echo $registerFormAction; ?>">
+  <h1>Register</h1>
+  <table width="361" border="0">
+    <tr>
+      <td><h2>Register Success!</h2></td>
+	</tr>
+	<tr>
+	  <td><h4>After 3 second jump to login page</h4></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+
+<script>
+  var i = 4;
+  function out(){
+    if (i>0){
+      i--;
+    }else{
+      location.href="/bjsj/login.php";
+    }
+  }
+  setInterval('out()',1000);
+</script>
